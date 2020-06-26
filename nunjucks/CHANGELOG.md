@@ -269,8 +269,7 @@ No code changes; fixed npm packaging issue.
   Thanks Alex Mayfield for report and test, Ouyang Yadong for fix.
   Merge of [#661](https://github.com/mozilla/nunjucks/pull/661).
 
-* Add support for `{% set %}` block assignments as in jinja2. Thanks Daniele
-  Rapagnani. Merge of [#656](https://github.com/mozilla/nunjucks/pull/656)
+*  Merge of [#656](https://github.com/mozilla/nunjucks/pull/656)
 
 * Fix `{% set %}` scoping within macros.
   Fixes [#577](https://github.com/mozilla/nunjucks/issues/577) and
