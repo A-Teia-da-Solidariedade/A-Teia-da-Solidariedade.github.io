@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+{% set bodyId = "page-search-result" %}
+{% block title %}
+    <title>Resultado da pesquisa na Teia</title>
+{% endblock title %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/search-results.css">
+{% endblock styles %}
+
+{% block header %}
+    {%include "partials/page-header.html" %}
+{% endblock header %}
+
+{% block content %}
+    <main>
+        {% if total > 0 %}
+        <h3>
+            <strong>{{total}} Entidades</strong>
+            encontrados</h3>
+        <div class="cards">
+
+            {% for place in places %}
+                <div class="card">
+                    
+                    <img  src="{{place.image}}" alt="{{place.name}}">
+                    <h1>{{place.name}}</h1>
+                    <h3>{{place.address2}}</h3>
+                    <p>
+                        {{place.city}},{{place.state}}
+                        <br>
+                        {{place.address}}
+                        <br>
+                    <a href="{{place.site}}">{{place.site}}</a>    
+                        <br>
+                        {{place.about}}
+                    </p>
+                </div>
+            {% endfor %}
+
+        </div>
+        {%else%}
+
+        <h4><strong>Nenhum </strong>Local Encontrado</h4>
+
+        {% endif %}
+    </main>
+{% endblock content %}

@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% set bodyId = "page-home" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+{% endblock styles %}
+
+{% block content %}
+    <div class="content">
+
+        <header >
+            <img src="/assets/logo_teia.png" alt="Ecoleta">
+            
+                <div class="cadastre">
+                    <a href="/create-point">
+                        <span></span>
+                        Cadastre a Organização/Projeto</a>
+                </div>
+                <div class="relatos">
+                    <a href="">
+                        Relatos da Teia
+                    </a>
+                </div>
+            
+
+        </header>
+
+        <main>
+            <h1>Sua reunião de pessoas com vontade de ser
+                <strong>A Diferença</strong>
+            </h1>
+
+            <p>Ajudamos pessoas a encontrarem e participarem de projetos sociais ou ONGs pelo Brasil
+            </p>
+            <a href="#">
+                <span></span>
+                <strong>Pesquisar na Teia</strong>
+            </a>
+
+        </main>
+
+    </div>
+{% endblock content %}
+
+{% block modal %}
+    {%include "partials/modal.html"%}
+{% endblock modal %}
+
+{% block scripts %}
+    <script src="/scripts/index.js"></script>
+{% endblock scripts %}
