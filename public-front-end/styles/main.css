@@ -1,0 +1,36 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+/*box model*/
+body{
+-webkit-font-smoothing: antialiased;/*deixa as fontes mais suaves de ler*/
+background-color: coral;
+
+}
+*{/*variaveis utilizadas para todos os codigos*/
+margin: 0;
+padding: 0;
+box-sizing: border-box;/*necessaria para aumentar o tamanho da caixa de teto até as bordas,além de ajudar o padding não esticar desnecessariamente a caixa*/
+}
+
+:root{
+
+    --title-color:#322153;
+    --primarycolor:#b8860b;
+}/*define variaveis de cores disponiveis para TODOS os codigos*/
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5{
+    
+    color: var(--title-color);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+  
+
+
+
+

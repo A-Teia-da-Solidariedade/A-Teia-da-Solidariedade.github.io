@@ -1,0 +1,37 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+/*box model*/
+body{
+-webkit-font-smoothing: antialiased;
+background-color:#A8FC43;
+
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;/*necessaria para aumentar o tamanho da caixa de teto até as bordas,além de ajudar o padding não esticar desnecessariamente a caixa*/
+}
+
+:root{
+
+    --vermelho:#DE2D02;    /*#F13A3A*/
+    --branco:#dfdddc;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5{
+    
+    color: var(--vermelho);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
+  
+
+
+
+

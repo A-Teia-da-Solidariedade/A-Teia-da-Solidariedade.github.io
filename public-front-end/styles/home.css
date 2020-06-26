@@ -1,0 +1,103 @@
+#page-home{
+    height: 100vh;/*visual height*/
+
+
+ 
+
+}
+
+
+#page-home header{
+    margin-top: 20px;
+display: flex;
+align-items: center;
+flex-direction: row;
+justify-content: space-between;
+margin-bottom: 10px;
+
+}
+#page-home .content{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;/*direçao da caixa*/
+}
+#page-home header a{
+    display: flex;
+    color: black;
+    font-weight: 700;
+}
+
+
+#page-home header a span{
+    margin-right: 16px;
+display: flex;
+width: 20px;
+height: 20px;
+    background-image: url('../assets/log-in.svg');
+}
+
+#page-home main{
+max-width: 100vw;
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background:url(https://images.unsplash.com/photo-1539056148000-954858fb8a37?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=773&q=80 ) no-repeat     ;
+background-size: 100vmax;
+border-radius: 12px 12px 0 0;
+
+}
+#page-home main h1{
+    font-size: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--vermelho);
+}
+
+#page-home main p{
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 20px ;
+    color: #F13A3A;
+}
+#page-home main a{
+width: 100%;
+max-width: 360px;
+height: 72px;
+border-radius: 8px;/*arredonda as pontas*/
+align-items: center;
+margin-top: 40px;
+display: flex;
+background-color: rgba(243, 109, 109, 0.6);/*puxa a variavel do roots no main*/
+transition: 400ms;
+
+
+}
+#page-home main a:hover {
+    background-color: darkorange;
+}
+#page-home main a span{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 72px;
+    height: 72px;
+    background-color: rgba(0, 0, 0, 0.08);/*ultimo numero define a transparencia,tem q botar rgba pra ficar transparente*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page-home main a span::after{
+    content: "";
+    background-image: url('../assets/search.svg');
+    width: 20px;
+    height: 20px;
+}
+#page-home main a strong{
+    flex: 1;
+    text-align: center;
+}
