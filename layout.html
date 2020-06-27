@@ -1,0 +1,49 @@
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
+
+
+{% block title %}
+<title>A Teia da Solidariedade</title>
+{% endblock title %}
+
+ 
+
+    
+   <link rel="stylesheet" href="/styles/main_aula2.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
+    {% block styles %}
+    {% endblock styles %}
+
+
+
+
+
+<div id= "{{bodyId}}">
+{% block header %}
+{% endblock header %}
+ {% block content %}
+ {% endblock content %}
+</div>
+
+{% block modal %}
+{% endblock modal %}
+
+
+ 
+{% block scripts %}
+{% endblock scripts %}
+
+
+    
+
+
+
+</body>
+</html>
